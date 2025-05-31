@@ -13,12 +13,11 @@ const container = document.getElementById('itinerary');
 itinerary.forEach(({ day, city, date }, index) => {
   const dayDiv = document.createElement('div');
   dayDiv.className = 'itinerary-day';
-  dayDiv.innerHTML = `<h3>${day} - ${city}</h3><p>${date}</p>`;
-
+  dayDiv.innerHTML = `<h3>${day} - ${city}</h3><p class="date">${date}</p>`;
   dayDiv.addEventListener('click', () => {
     const diaArchivo = `dia${index + 1}.html`;
     window.location.href = diaArchivo;
   });
-
+  console.log(`${day} - ${city}`, date);
   container.appendChild(dayDiv);
 });

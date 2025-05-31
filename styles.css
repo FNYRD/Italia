@@ -77,16 +77,6 @@ p {
   color: #555;
 }
 
-/* .itinerary-day::before {
-  content: "•";
-  color: #2ecc71;
-  font-size: 1.5em;
-  margin-right: 10px;
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 1;
-} */
-
 .itinerary-day {
   margin: 20px 0;
   padding: 15px;
@@ -95,8 +85,18 @@ p {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  align-items: center;
+  display: block; /* CORREGIDO: no usar flex aquí */
+}
+
+.itinerary-day h3 {
+  margin: 0 0 6px 0; /* espacio entre título y fecha */
+  font-weight: bold;
+}
+
+.itinerary-day .date {
+  font-size: 0.95em;
+  color: #666;
+  margin: 0;
 }
 
 .itinerary-day:hover,
@@ -104,4 +104,3 @@ p {
   background-color: rgba(255, 255, 0, 0.25);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
