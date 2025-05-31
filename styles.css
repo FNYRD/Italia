@@ -2,7 +2,8 @@
 body.welcome {
   margin: 0;
   padding: 0;
-  background-image: url('https://images.unsplash.com/photo-1549893074-7e90380f7693?auto=format&fit=crop&w=1950&q=80');  background-position: center center;
+  background-image: url('https://images.unsplash.com/photo-1549893074-7e90380f7693?auto=format&fit=crop&w=1950&q=80');
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -83,9 +84,11 @@ p {
   border-left: 5px solid #2ecc71;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.itinerary-day:hover {
-  background-color: #d1f2eb;
+.itinerary-day:hover,
+.itinerary-day:active {
+  background-color: rgba(255, 255, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
