@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenida a tu viaje</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.pinimg.com/736x/a8/3a/3f/a83a3f1f995e694e50cb3de32ebc2268.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    h1 {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+      font-size: 1.9em;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .start-btn {
+      padding: 12px 24px;
+      background-color: #2ecc71;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Primer 
+      <br/>
+      viaje
+      <br/>
+      arrechisimo
+      <br/>
+      Italia 🇮🇹
+    </h1>
+    <a href="intinerarios.html" class="start-btn">Comenzar</a>
+  </div>
+</body>
+</html>

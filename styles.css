@@ -1,0 +1,91 @@
+/* Estilos para la pantalla de bienvenida */
+body.welcome {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1549893074-7e90380f7693?auto=format&fit=crop&w=1950&q=80');  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.overlay {
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.start-btn {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Estilos generales solo si NO es la pantalla de bienvenida */
+body:not(.welcome) {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+.itinerary-day {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #e8f6f3;
+  border-left: 5px solid #2ecc71;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.itinerary-day:hover {
+  background-color: #d1f2eb;
+}
